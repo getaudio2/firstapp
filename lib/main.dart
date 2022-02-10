@@ -123,35 +123,33 @@ class MyApp extends StatelessWidget {
                       Row(
                         children: <Widget>[
                           Container(
-                            width: 150.0,
-                            height: 150.0,
-                            margin: const EdgeInsets.only(left: 10.0),
-                            child: const DecoratedBox(
+                              width: 150.0,
+                              height: 150.0,
+                              margin: const EdgeInsets.only(left: 10.0),
                               decoration: BoxDecoration(
-                                borderRadius: BorderRadius.only(
-                                    topRight: Radius.circular(10.0),
-                                    bottomRight: Radius.circular(10.0),
-                                    topLeft: Radius.circular(10.0),
-                                    bottomLeft: Radius.circular(10.0)),
                                 color: Color(0xff487779),
+                                borderRadius: BorderRadius.circular(10.0),
+                              ),
+                              child: Column(
+                                children: [
+                                  Text("aaaa"),
+                                ]
                               ),
                             ),
-                          ),
                           Container(
-                            width: 150.0,
-                            height: 150.0,
-                            margin: const EdgeInsets.only(left: 10.0),
-                            child: const DecoratedBox(
+                              width: 150.0,
+                              height: 150.0,
+                              margin: const EdgeInsets.only(left: 10.0),
                               decoration: BoxDecoration(
-                                borderRadius: BorderRadius.only(
-                                    topRight: Radius.circular(10.0),
-                                    bottomRight: Radius.circular(10.0),
-                                    topLeft: Radius.circular(10.0),
-                                    bottomLeft: Radius.circular(10.0)),
                                 color: Color(0xffe46472),
+                                borderRadius: BorderRadius.circular(10.0),
+                              ),
+                              child: Column(
+                                children: [
+                                  Text("aaaa"),
+                                ]
                               ),
                             ),
-                          ),
                         ],
                       ),
                       Padding(
@@ -162,15 +160,14 @@ class MyApp extends StatelessWidget {
                               width: 150.0,
                               height: 150.0,
                               margin: const EdgeInsets.only(left: 10.0),
-                              child: const DecoratedBox(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.only(
-                                      topRight: Radius.circular(10.0),
-                                      bottomRight: Radius.circular(10.0),
-                                      topLeft: Radius.circular(10.0),
-                                      bottomLeft: Radius.circular(10.0)),
-                                  color: Color(0xfff9be7c),
-                                ),
+                              decoration: BoxDecoration(
+                                color: Color(0xfff9be7c),
+                                borderRadius: BorderRadius.circular(10.0),
+                              ),
+                              child: Column(
+                                children: [
+                                  Text("aaaa"),
+                                ]
                               ),
                             ),
                             //SizedBox(width: 20.0),
@@ -178,16 +175,15 @@ class MyApp extends StatelessWidget {
                               width: 150.0,
                               height: 150.0,
                               margin: const EdgeInsets.only(left: 10.0),
-                              child: const DecoratedBox(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.only(
-                                      topRight: Radius.circular(10.0),
-                                      bottomRight: Radius.circular(10.0),
-                                      topLeft: Radius.circular(10.0),
-                                      bottomLeft: Radius.circular(10.0)),
-                                  color: Color(0xff6488e4),
-                                ),
+                              decoration: BoxDecoration(
+                                color: Color(0xff6488e4),
+                                borderRadius: BorderRadius.circular(10.0),
                               ),
+                              child: Column(
+                                children: [
+                                  Text("aaaa"),
+                                ]
+                              ),  
                             ),
                           ],
                         ),
