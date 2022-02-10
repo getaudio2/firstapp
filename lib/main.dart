@@ -16,8 +16,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Color(0xfff9be7c),
         ),
         body: Container(
-          padding:
-                      EdgeInsets.symmetric(horizontal: 7.0, vertical: 10.0),
+          padding: EdgeInsets.symmetric(horizontal: 7.0, vertical: 10.0),
           child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -38,16 +37,21 @@ class MyApp extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: <Widget>[
-                        CircleAvatar(
-                          radius: 20,
-                          backgroundColor: Color(0xffe46472),
-                          child: IconButton(
-                            icon: Icon(
-                              Icons.alarm,
-                              color: Colors.white,
-                              size: 20.0,
+                        Padding(
+                          padding: const EdgeInsets.only(right: 8.0),
+                          child: Container(
+                            child: CircleAvatar(
+                              radius: 20,
+                              backgroundColor: Color(0xffe46472),
+                              child: IconButton(
+                                icon: Icon(
+                                  Icons.alarm,
+                                  color: Colors.white,
+                                  size: 20.0,
+                                ),
+                                onPressed: () {},
+                              ),
                             ),
-                            onPressed: () {},
                           ),
                         ),
                         Text(
@@ -63,16 +67,21 @@ class MyApp extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: <Widget>[
-                        CircleAvatar(
-                          radius: 20,
-                          backgroundColor: Color(0xfff9be7c),
-                          child: IconButton(
-                            icon: Icon(
-                              Icons.blur_circular,
-                              color: Colors.white,
-                              size: 20.0,
+                        Padding(
+                          padding: const EdgeInsets.only(right: 8.0),
+                          child: Container(
+                            child: CircleAvatar(
+                              radius: 20,
+                              backgroundColor: Color(0xfff9be7c),
+                              child: IconButton(
+                                icon: Icon(
+                                  Icons.blur_circular,
+                                  color: Colors.white,
+                                  size: 20.0,
+                                ),
+                                onPressed: () {},
+                              ),
                             ),
-                            onPressed: () {},
                           ),
                         ),
                         Text(
@@ -88,16 +97,21 @@ class MyApp extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: <Widget>[
-                        CircleAvatar(
-                          radius: 20,
-                          backgroundColor: Color(0xff6488e4),
-                          child: IconButton(
-                            icon: Icon(
-                              Icons.check_circle_outline,
-                              color: Colors.white,
-                              size: 20.0,
+                        Padding(
+                          padding: const EdgeInsets.only(right: 8.0),
+                          child: Container(
+                            child: CircleAvatar(
+                              radius: 20,
+                              backgroundColor: Color(0xff6488e4),
+                              child: IconButton(
+                                icon: Icon(
+                                  Icons.check_circle_outline,
+                                  color: Colors.white,
+                                  size: 20.0,
+                                ),
+                                onPressed: () {},
+                              ),
                             ),
-                            onPressed: () {},
                           ),
                         ),
                         Text(
@@ -110,46 +124,45 @@ class MyApp extends StatelessWidget {
                 Container(
                   color: Colors.transparent,
                   padding:
-                      EdgeInsets.symmetric(horizontal: 7.0, vertical: 10.0),
+                      EdgeInsets.symmetric(horizontal: 7.0, vertical: 5.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      Text(
-                        "Active Projects",
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 25),
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 10.0),
+                        child: Text(
+                          "Active Projects",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 25),
+                        ),
                       ),
                       //SizedBox(height: 5.0),
                       Row(
                         children: <Widget>[
                           Container(
-                              width: 150.0,
-                              height: 150.0,
-                              margin: const EdgeInsets.only(left: 10.0),
-                              decoration: BoxDecoration(
-                                color: Color(0xff487779),
-                                borderRadius: BorderRadius.circular(10.0),
-                              ),
-                              child: Column(
-                                children: [
-                                  Text("aaaa"),
-                                ]
-                              ),
+                            width: 150.0,
+                            height: 150.0,
+                            margin: const EdgeInsets.only(left: 10.0),
+                            decoration: BoxDecoration(
+                              color: Color(0xff487779),
+                              borderRadius: BorderRadius.circular(10.0),
                             ),
+                            child: Column(children: [
+                              Text("aaaa"),
+                            ]),
+                          ),
                           Container(
-                              width: 150.0,
-                              height: 150.0,
-                              margin: const EdgeInsets.only(left: 10.0),
-                              decoration: BoxDecoration(
-                                color: Color(0xffe46472),
-                                borderRadius: BorderRadius.circular(10.0),
-                              ),
-                              child: Column(
-                                children: [
-                                  Text("aaaa"),
-                                ]
-                              ),
+                            width: 150.0,
+                            height: 150.0,
+                            margin: const EdgeInsets.only(left: 10.0),
+                            decoration: BoxDecoration(
+                              color: Color(0xffe46472),
+                              borderRadius: BorderRadius.circular(10.0),
                             ),
+                            child: Column(children: [
+                              Text("aaaa"),
+                            ]),
+                          ),
                         ],
                       ),
                       Padding(
@@ -164,11 +177,9 @@ class MyApp extends StatelessWidget {
                                 color: Color(0xfff9be7c),
                                 borderRadius: BorderRadius.circular(10.0),
                               ),
-                              child: Column(
-                                children: [
-                                  Text("aaaa"),
-                                ]
-                              ),
+                              child: Column(children: [
+                                Text("aaaa"),
+                              ]),
                             ),
                             //SizedBox(width: 20.0),
                             Container(
@@ -179,11 +190,9 @@ class MyApp extends StatelessWidget {
                                 color: Color(0xff6488e4),
                                 borderRadius: BorderRadius.circular(10.0),
                               ),
-                              child: Column(
-                                children: [
-                                  Text("aaaa"),
-                                ]
-                              ),  
+                              child: Column(children: [
+                                Text("aaaa"),
+                              ]),
                             ),
                           ],
                         ),
