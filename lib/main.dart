@@ -123,8 +123,7 @@ class MyApp extends StatelessWidget {
                 ),
                 Container(
                   color: Colors.transparent,
-                  padding:
-                      EdgeInsets.symmetric(horizontal: 7.0, vertical: 5.0),
+                  padding: EdgeInsets.symmetric(horizontal: 7.0, vertical: 5.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
@@ -147,9 +146,19 @@ class MyApp extends StatelessWidget {
                               color: Color(0xff487779),
                               borderRadius: BorderRadius.circular(10.0),
                             ),
-                            child: Column(children: [
-                              Text("aaaa"),
-                            ]),
+                            child: Padding(
+                              padding:
+                                  const EdgeInsets.only(top: 110.0, right: 50),
+                              child: Column(children: [
+                                Text(
+                                  "Medical App",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ]),
+                            ),
                           ),
                           Container(
                             width: 150.0,
@@ -159,9 +168,19 @@ class MyApp extends StatelessWidget {
                               color: Color(0xffe46472),
                               borderRadius: BorderRadius.circular(10.0),
                             ),
-                            child: Column(children: [
-                              Text("aaaa"),
-                            ]),
+                            child: Padding(
+                              padding:
+                                  const EdgeInsets.only(top: 110.0, right: 30),
+                              child: Column(children: [
+                                Text(
+                                  "Making History\nNotes",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ]),
+                            ),
                           ),
                         ],
                       ),
@@ -177,9 +196,19 @@ class MyApp extends StatelessWidget {
                                 color: Color(0xfff9be7c),
                                 borderRadius: BorderRadius.circular(10.0),
                               ),
+                              child: Padding(
+                              padding:
+                                  const EdgeInsets.only(top: 110.0, right: 50),
                               child: Column(children: [
-                                Text("aaaa"),
+                                Text(
+                                  "Sports App",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                  ),
+                                ),
                               ]),
+                            ),
                             ),
                             //SizedBox(width: 20.0),
                             Container(
@@ -190,9 +219,19 @@ class MyApp extends StatelessWidget {
                                 color: Color(0xff6488e4),
                                 borderRadius: BorderRadius.circular(10.0),
                               ),
+                              child: Padding(
+                              padding:
+                                  const EdgeInsets.only(top: 110.0, right: 30),
                               child: Column(children: [
-                                Text("aaaa"),
+                                Text(
+                                  "Online Flutter\nCourse",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                  ),
+                                ),
                               ]),
+                            ),
                             ),
                           ],
                         ),
@@ -206,77 +245,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-/*Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Text(
-                    "Active Projects",
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
-                  ),
-                ),
-                Row(children: <Widget>[
-                  Container(
-                    width: 150.0,
-                    height: 150.0,
-                    margin: const EdgeInsets.only(left: 10.0),
-                    child: const DecoratedBox(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.only(
-                            topRight: Radius.circular(10.0),
-                            bottomRight: Radius.circular(10.0),
-                            topLeft: Radius.circular(10.0),
-                            bottomLeft: Radius.circular(10.0)),
-                        color: Color(0xff487779),
-                      ),
-                    ),
-                  ),
-                  Container(
-                    width: 150.0,
-                    height: 150.0,
-                    margin: const EdgeInsets.only(left: 10.0),
-                    child: const DecoratedBox(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.only(
-                            topRight: Radius.circular(10.0),
-                            bottomRight: Radius.circular(10.0),
-                            topLeft: Radius.circular(10.0),
-                            bottomLeft: Radius.circular(10.0)),
-                        color: Color(0xffe46472),
-                      ),
-                    ),
-                  ),
-                ]),
-                Padding(
-                  padding: const EdgeInsets.only(top: 8.0),
-                  child: Row(children: <Widget>[
-                    Container(
-                      width: 150.0,
-                      height: 150.0,
-                      margin: const EdgeInsets.only(left: 10.0),
-                      child: const DecoratedBox(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.only(
-                              topRight: Radius.circular(10.0),
-                              bottomRight: Radius.circular(10.0),
-                              topLeft: Radius.circular(10.0),
-                              bottomLeft: Radius.circular(10.0)),
-                          color: Color(0xfff9be7c),
-                        ),
-                      ),
-                    ),
-                    Container(
-                      width: 150.0,
-                      height: 150.0,
-                      margin: const EdgeInsets.only(left: 10.0),
-                      child: const DecoratedBox(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.only(
-                              topRight: Radius.circular(10.0),
-                              bottomRight: Radius.circular(10.0),
-                              topLeft: Radius.circular(10.0),
-                              bottomLeft: Radius.circular(10.0)),
-                          color: Color(0xff6488e4),
-                        ),
-                      ),
-                    ),
-                  ]),*/
